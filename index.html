@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Div Layout Project</title>
+	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+	
+	<div id="container">
+		<div class="jumbotron">
+			<h2 id="message" class="col-sm-12 text-center"></h2>
+			<button>Reset</button>
+			<button>Play vs Computer</button>
+			<button>Human vs Human</button>
+		</div>
+		<div class="row" style="margin-left: 10%; margin-right: 5%;">
+			<div id="victory"></div>
+			<div class="col-sm-12 text-center">
+				<h1>TIC TAC TOE</h1>
+			</div>
+			<div class="board">
+				<div class="row-1 board-row">
+					 <button onclick="markSquare(this)" id="A1" class="square">-</button>
+					 <button onclick="markSquare(this)" id="A2" class="square">-</button>
+					 <button onclick="markSquare(this)" id="A3" class="square">-</button>
+				</div>
+				<div class="row-2 board-row">
+					 <button onclick="markSquare(this)" id="B1" class="square">-</button>
+					 <button onclick="markSquare(this)" id="B2" class="square">-</button>
+					 <button onclick="markSquare(this)" id="B3" class="square">-</button>
+				</div>
+				<div class="row-3 board-row">
+					 <button onclick="markSquare(this)" id="C1" class="square">-</button>
+					 <button onclick="markSquare(this)" id="C2" class="square">-</button>
+					 <button onclick="markSquare(this)" id="C3" class="square">-</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="jscripts.js">
+</script>
+</body>
+</html>
